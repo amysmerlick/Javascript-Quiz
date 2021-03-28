@@ -1,0 +1,96 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Times New Roman";
+}
+
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro {
+  text-align: center;
+  margin: 60px;
+  color: black;
+  
+}
+
+.JavaScript {
+    font-size: 50px;
+    margin: 100px;
+}
+
+p {
+  color: slategray;
+}
+
+.container{
+  width: 800px;
+  background-color: rgba(149, 150, 209, 0.993);
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 40px;
+  box-shadow: 0 0 10px 2px;
+}
+
+#question {
+    font-size: 30px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  border: 2px solid black, 100%, 30%;
+  background-color: white, 100%, 50%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  font-size: 20px;
+}
+
+.btn:hover {
+  border-color: white;
+  background-color: black;
+  color: white;
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  body {
+    flex-direction: column;
+  }
+}
