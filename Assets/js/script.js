@@ -6,11 +6,6 @@ let questionElement = document.getElementById('question')
 let answerButtonsElement = document.getElementById('answer-buttons')
 let timer = 60;
 let shuffledQuestions, currentQuestionIndex
-// TESTING LOCAL STORAGE
-let submitEl = document.querySelector("#submit");
-//
-
-
 
 // Event Listeners
 startButton.addEventListener('click', startGame)
@@ -48,13 +43,13 @@ function gameOver() {
   console.log('gameover')
 }
 
-// Setting next question
+
 function setNextQues() {
   resetState()
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-// Showing the question
+//shows the questions within the container versus seeing "answer 1-4"
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
